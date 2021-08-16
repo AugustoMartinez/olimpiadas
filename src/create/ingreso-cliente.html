@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<script src="https://kit.fontawesome.com/6686988e54.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../../style.css" />
 	</head>
 	<body>
 		<h1 class="titulo">Gimnasio 'Siempre en forma'</h1>
@@ -27,16 +27,16 @@
                     <div class="principal-seccion">
                         <div class="subseccion">
                             <label for="domicilio" class="texto-campo">Ingresar domicilio</label>
-                            <input type="text" id="domicilio" class="campo-ingreso" />
+                            <input type="text" id="domicilio" class="campo-ingreso"/>
                         </div>
                         <div class="subseccion">
                             <label for="n-domicilio" class="texto-campo">Ingresar N° de domicilio</label>
-                            <input type="text" id="n-domicilio" class="campo-ingreso" />
+                            <input type="number" id="n-domicilio" class="campo-ingreso campo-ingreso--numero" />
                         </div>
                     </div>
                     <div class="seccion">
                         <label for="telefono" class="texto-campo">Ingresar telefono</label>
-                        <input type="text" id="telefono" class="campo-ingreso" />
+                        <input type="tel" id="telefono" class="campo-ingreso" pattern="[0-9]{2,3}-[0-9]{4}-[0-9]{4}"/>
                     </div>
                     <div class="seccion">
                         <label for="clases" class="texto-campo">A que clases asiste</label>
@@ -53,6 +53,6 @@
                 </div>
             </form>       
         </main>
-        <a href="./ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
+        <a href="../ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
     </body>
 </html>

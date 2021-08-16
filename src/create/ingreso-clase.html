@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<script src="https://kit.fontawesome.com/6686988e54.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../../style.css" />
 	</head>
 	<body>
 		<h1 class="titulo">Gimnasio 'Siempre en forma'</h1>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="seccion">
                         <label for="horario" class="texto-campo">Ingresar horario de clase</label>
-                        <input type="text" id="horario" class="campo-ingreso" />
+                        <input type="time" id="horario" class="campo-ingreso campo-ingreso--hora" />
                     </div>
                     <div class="seccion">
                         <label for="sala" class="texto-campo">Ingresar sala asignada</label>
@@ -28,10 +28,10 @@
                     </div>
                     <div class="seccion">
                         <label for="sala" class="texto-campo">Ingresar costo de la clase</label>
-                        <input type="text" id="sala" class="campo-ingreso" />
+                        <input type="number" id="sala" class="campo-ingreso" />
                     </div>
                     <div class="seccion">
-                        <label for="prof" class="texto-campo">Ingresar profesor que la imparte</label>
+                        <label for="prof" class="texto-campo">¿Que profesor la imparte?</label>
                         <input type="text" id="prof" class="campo-ingreso" />
                     </div>
                     <div class="sub">
@@ -40,6 +40,6 @@
                 </div>
             </form>       
         </main>
-        <a href="./ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
+        <a href="../ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
     </body>
 </html>
