@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://kit.fontawesome.com/6686988e54.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<h1 class="titulo">Gimnasio 'Siempre en forma'</h1>
+		<h3 class="subtitulo">Ingreso de datos de cliente</h3>
+        <main class="main-2">
+            <form action="">
+                <div class="contenedor-formulario">
+                    <div class="principal-seccion">
+                        <div class="subseccion">
+                            <label for="nombre" class="texto-campo">Ingresar nombre</label>
+                            <input type="text" id="nombre" class="campo-ingreso" />
+                        </div>
+                        <div class="subseccion">
+                            <label for="apellido" class="texto-campo">Ingresar apellido</label>
+                            <input type="text" id="apellido" class="campo-ingreso" />
+                        </div>
+                    </div>
+                    <div class="principal-seccion">
+                        <div class="subseccion">
+                            <label for="domicilio" class="texto-campo">Ingresar domicilio</label>
+                            <input type="text" id="domicilio" class="campo-ingreso" />
+                        </div>
+                        <div class="subseccion">
+                            <label for="n-domicilio" class="texto-campo">Ingresar N° de domicilio</label>
+                            <input type="text" id="n-domicilio" class="campo-ingreso" />
+                        </div>
+                    </div>
+                    <div class="seccion">
+                        <label for="telefono" class="texto-campo">Ingresar telefono</label>
+                        <input type="text" id="telefono" class="campo-ingreso" />
+                    </div>
+                    <div class="seccion">
+                        <label for="clases" class="texto-campo">A que clases asiste</label>
+                        <input type="text" id="clases" class="campo-ingreso" />
+                    </div>
+                    <div class="seccion">
+                        <label for="sala" class="texto-campo">Esta al dia con la cuota mensual</label>
+                        <label for="si" class="texto-campo"><input type="radio" name="pago" value="true" id="si" />Si</label>
+                        <label for="no" class="texto-campo"><input type="radio" name="pago" value="false" id="no">No</label>
+                    </div>
+                    <div class="sub">
+                        <button type="submit" class="btn-submit">Ingresar</button>
+                    </div>
+                </div>
+            </form>       
+        </main>
+        <a href="./ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
+    </body>
+</html>
