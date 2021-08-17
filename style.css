@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, .5);
-    background-position: center;
+    background-position: center center;
     background-blend-mode: multiply;
     background-attachment: fixed;
     width: 100%;
@@ -113,6 +113,7 @@ body{
     box-shadow: 0 8px 34px 0 rgba(0, 0, 0, .5);
     position: absolute;
     margin-top: 20px;
+    margin-bottom: 20px;
     left: 50%;
     transform: translate(-50%);
     -webkit-transform: translate(-50%);
@@ -219,6 +220,13 @@ form{
     }
     .campo-ingreso--hora{
         width: 90px;
+    }
+    .seccion-antiguedad{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .seccion-borrar{
+        align-items: center;
     }
 
 /* --- Responsive desing --- */ 
