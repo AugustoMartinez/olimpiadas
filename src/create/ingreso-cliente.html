@@ -9,6 +9,12 @@
 		<link rel="stylesheet" href="../../style.css" />
 	</head>
 	<body>
+        <div id="modal-fondo" class="modal-contenedor modal-ocultar">
+            <div id="modal" class="modal-contenido">
+                <i class="far fa-check-circle modal-check"></i>
+                <span class="modal-texto">Cliente agregado</span>
+            </div>
+        </div>
 		<h1 class="titulo">Gimnasio 'Siempre en forma'</h1>
 		<h3 class="subtitulo">Ingreso de datos de cliente</h3>
         <main class="main-2">
@@ -48,11 +54,12 @@
                         <label for="no" class="texto-campo"><input type="radio" name="pago" value="false" id="no">No</label>
                     </div>
                     <div class="sub">
-                        <button type="submit" class="btn-submit">Ingresar</button>
+                        <button type="button" id="submit" class="btn-submit">Ingresar</button>
                     </div>
                 </div>
             </form>       
         </main>
         <a href="../ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
+        <script src="../../index.js"></script>
     </body>
 </html>
