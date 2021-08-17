@@ -24,6 +24,8 @@ body{
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 /* --- Titulo y subtitulos de las paginas --- */ 
@@ -211,6 +213,94 @@ form{
     -o-border-radius: 7px;
     color: var(--blanco);
 }
+.btn-submit:hover{
+    background: hsl(198, 68%, 38%);
+}
+
+/* --- Diseño de tabla --- */ 
+.tabla{
+    color: var(--blanco);
+    background: var(--color-cristal);
+    border: 1px solid var(--borde-cristal);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-align: center;
+    border-spacing: 0;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+.row-head{
+    background: rgb(12, 112, 226);
+}
+th, td{
+    padding: 4px 10px;
+    border: 1px solid var(--borde-cristal);
+}
+
+.modal-contenedor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido{
+    background: var(--blanco);
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-check{
+    color: green;
+    font-size: 75px;
+}
+.modal-texto{
+    margin-top: 20px;
+}
+.modal-ocultar{
+    display: none;
+}
+
+.animacion-modal{
+    animation: modals 1s ease;
+    -webkit-animation: modals 1s ease;
+}
+@keyframes modals {
+    0%{
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px);
+        -moz-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        -o-transform: translateY(-40px);
+        opacity: 0;
+}
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+}
+    
+}
     /* --- Modificadores especiales --- */ 
     .campo-ingreso--numero{
         width: 100px;
@@ -239,3 +329,9 @@ form{
     }
 }
 
+@media screen and (max-width: 720px){
+    .tabla{
+        display: block;
+        overflow: auto;
+    }
+}
