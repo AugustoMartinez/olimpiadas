@@ -55,7 +55,7 @@ body{
 .main-2{
     display: flex;
     justify-content: center;
-    margin: 7rem 0 0;
+    margin: 7rem 2rem 0;
 }
 .nav-btn{
     display: flex;
