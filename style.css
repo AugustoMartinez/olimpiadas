@@ -347,7 +347,10 @@ th, td{
     }
 
 /* --- Responsive desing --- */ 
-@media screen and (max-width :500px){
+@media screen and (max-width: 500px){
+    body{
+        background-image: url("./WhatsApp\ Image\ 2021-08-18\ at\ 17.16.54.jpeg");
+    }
     .contenedor-formulario{
         align-items: center;
     }
