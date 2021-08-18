@@ -46,7 +46,7 @@ body{
 }
 
 /* --- Contenedores --- */ 
-.main-1{
+.contenedor-inicial{
     display: flex;
     justify-content: center;
     margin: 9rem 0 0;
@@ -190,7 +190,10 @@ form{
     outline: none;
 }
 .campo-ingreso:focus{
-    border: 1px solid #00E2FD;
+    border: 1px solid rgb(0, 226, 253);
+    box-shadow: 0px 0px 18px 8px rgba(0,226,240,0.49);
+-webkit-box-shadow: 0px 0px 18px 8px rgba(0,226,240,0.49);
+-moz-box-shadow: 0px 0px 18px 8px rgba(0,226,240,0.49);
 }
 
 
@@ -203,7 +206,7 @@ form{
 .btn-submit{
     font-size: 1.04rem;
     font-weight: 500;
-    background: hsl(198, 76%, 54%);
+    background: linear-gradient(145deg, #34b9f3, #2c9ccc);
     border: 1px solid rgba(0, 0, 0, .2);
     width: 100px;
     border-radius: 7px;
@@ -217,6 +220,22 @@ form{
     background: hsl(198, 68%, 38%);
 }
 
+.btn-delete{
+    font-size: 1.04rem;
+    font-weight: 500;
+    background: linear-gradient(145deg, #f13030, #cb2929);
+    border: 1px solid rgba(0, 0, 0, .2);
+    width: 100px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    color: var(--blanco);
+}
+.btn-delete:hover{
+    background: linear-gradient(145deg, #ac2c2c, #8a1616);
+}
 /* --- Diseño de tabla --- */ 
 .tabla{
     color: var(--blanco);
@@ -323,7 +342,7 @@ th, td{
     .seccion-borrar{
         align-items: center;
     }
-    .cosa{
+    .tabla-responsive{
         overflow-x: auto;
     }
 
@@ -343,3 +362,62 @@ th, td{
         overflow: auto;
     }
 }
+
+
+
+/* --- Comprobacion
+
+<div class="modal-fondo">
+<div class="modal">
+<span>¿Está seguro?</span>
+<div>
+<button type="button" class="btn afirmativo">
+Si
+</button>
+<button type="button" class="btn negativo">
+No
+</button>
+</div>
+</div>
+</div>
+
+
+body{
+    margin: 0;
+}
+.modal-fondo{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background: white;
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.btn{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: 8px 6px;
+    padding: 4px 10px;
+}
+.afirmativo{
+    background: limegreen;
+}
+.negativo{
+    background: red;
+}
+
+--- */ 

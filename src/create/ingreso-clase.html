@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,44 +9,44 @@
 		<link rel="stylesheet" href="../../style.css" />
 	</head>
 	<body>
-        <div id="modal-fondo" class="modal-contenedor modal-ocultar">
-            <div id="modal" class="modal-contenido">
-                <i class="far fa-check-circle modal-check"></i>
-                <span class="modal-texto">Clase agregada</span>
-            </div>
-        </div>
+		<div id="modal-fondo" class="modal-contenedor modal-ocultar">
+			<div id="modal" class="modal-contenido">
+				<i class="far fa-check-circle modal-check"></i>
+				<span class="modal-texto">Clase agregada</span>
+			</div>
+		</div>
 		<h1 class="titulo">Gimnasio 'Siempre en forma'</h1>
 		<h3 class="subtitulo">Ingreso de datos de clase</h3>
-        <main class="main-2">
-            <form action="">
-                <div class="contenedor-formulario">
-                    <div class="seccion">
-                        <label for="descripcion" class="texto-campo">Ingresar descripcion de clase</label>
-                        <textarea id="descripcion" class="campo-ingreso descripcion-campo"></textarea>
-                    </div>
-                    <div class="seccion seccion-antiguedad">
-                        <label for="horario" class="texto-campo">Ingresar horario de clase</label>
-                        <input type="time" id="horario" class="campo-ingreso campo-ingreso--hora" />
-                    </div>
-                    <div class="seccion">
-                        <label for="sala" class="texto-campo">Ingresar sala asignada</label>
-                        <input type="text" id="sala" class="campo-ingreso" />
-                    </div>
-                    <div class="seccion">
-                        <label for="sala" class="texto-campo">Ingresar costo de la clase</label>
-                        <input type="number" id="sala" class="campo-ingreso" />
-                    </div>
-                    <div class="seccion">
-                        <label for="prof" class="texto-campo">¿Que profesor la imparte?</label>
-                        <input type="text" id="prof" class="campo-ingreso" />
-                    </div>
-                    <div class="sub">
-                        <button type="button" id="submit" class="btn-submit">Ingresar</button>
-                    </div>
-                </div>
-            </form>       
-        </main>
-        <a href="../ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
-        <script src="../../index.js"></script>
-    </body>
+		<main class="main-2">
+			<form action="">
+				<div class="contenedor-formulario">
+					<div class="seccion">
+						<label for="descripcion" class="texto-campo">Ingresar descripcion de clase</label>
+						<textarea id="descripcion" class="campo-ingreso descripcion-campo" name="descripcion"></textarea>
+					</div>
+					<div class="seccion seccion-antiguedad">
+						<label for="horario" class="texto-campo">Ingresar horario de clase</label>
+						<input type="time" id="horario" class="campo-ingreso campo-ingreso--hora" name="horario" />
+					</div>
+					<div class="seccion">
+						<label for="sala" class="texto-campo">Ingresar sala asignada</label>
+						<input type="text" id="sala" class="campo-ingreso" name="sala" />
+					</div>
+					<div class="seccion">
+						<label for="costo" class="texto-campo">Ingresar costo de la clase</label>
+						<input type="number" id="costo" class="campo-ingreso" name="costo" />
+					</div>
+					<div class="seccion">
+						<label for="prof" class="texto-campo">¿Que profesor la imparte?</label>
+						<input type="text" id="prof" class="campo-ingreso" name="profesor" />
+					</div>
+					<div class="sub">
+						<button type="button" id="submit" class="btn-submit">Ingresar</button>
+					</div>
+				</div>
+			</form>
+		</main>
+		<a href="../ingreso.html" class="btn-back ds"><i class="fas fa-arrow-left"></i></a>
+		<script src="../../index.js"></script>
+	</body>
 </html>
