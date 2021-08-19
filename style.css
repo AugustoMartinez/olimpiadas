@@ -331,31 +331,9 @@ th, td{
     display: flex;
     justify-content: center;
 }
-.texto-filtro{
-    background: var(--blanco);
-    border: 1px solid rgb(146, 146, 146);
-    width: 300px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    font-size: 1.04rem;
-    padding: 2px 0 2px 10px;
-    outline: none;
-}
-.select-filtro{
-    background: var(--blanco);
-    border: 1px solid rgb(146, 146, 146);
-    width: 100px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    font-size: 1.04rem;
-    padding: 2px 0 2px 10px;
-    outline: none;
+.btn-filtro{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
     /* --- Modificadores especiales --- */ 
@@ -378,7 +356,10 @@ th, td{
     .tabla-responsive{
         overflow-x: auto;
     }
-
+    .link{
+        text-decoration: none;
+        text-align: center;
+    }
 /* --- Responsive desing --- */ 
 @media screen and (max-width :500px){
     .contenedor-formulario{
@@ -386,6 +367,9 @@ th, td{
     }
     .principal-seccion{
         flex-direction: column;
+    }
+    body{
+        background-image: url("./WhatsApp\ Image\ 2021-08-18\ at\ 17.16.54.jpeg");
     }
 }
 
